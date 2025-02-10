@@ -11,11 +11,11 @@
 
 // trace the program a few times with different values
 
-let a = 'Pieter';
+let a = 'George';
 // let a = 'Blake';
 // let a = 'George';
 
-let b = 'Rabbit';
+let b = 'Schoenber';
 // let b = 'Wozzeck';
 // let b = 'Schoenberg';
 

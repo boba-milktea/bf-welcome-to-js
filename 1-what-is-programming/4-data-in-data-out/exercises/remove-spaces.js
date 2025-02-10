@@ -3,12 +3,14 @@
 /* Remove Spaces
 
   Data In:
-
+  any text 
 
   Data Out:
-
+  input without space
 
   Test Cases:
+  before: +*777 *-8 85 //
+  after:  +*777*-885//
 
 
 */

@@ -3,12 +3,13 @@
 /* Mirror
 
   Data In:
-
+  any text
 
   Data Out:
-
+  the input and "|" and the reversed input 
 
   Test Cases:
+  888--- -> 888---|---888
 
 
 */
@@ -25,7 +26,7 @@ while (input === null) {
 
 let mirrored = ' | ';
 for (let character of input) {
-  mirrored = character + mirrored + character;
+  mirrored = character + mirrored + character; //1|1 //12|21 //123|321
   console.log(mirrored);
 }
 
