@@ -3,13 +3,16 @@
 /* Flip Five
 
   Data In:
-
+  any text
 
   Data Out:
-
+  the reverse input if the input text is exactly 5 characters long
+  get the alert 'nope, try again.' if it's not 5 characters. 
 
   Test Cases:
-
+  1. "cookies" -> alert 'nope, try again.'
+  2. ""  -> alert 'nope, try again.'
+  3. 12345 -> 54321
 
 */
 

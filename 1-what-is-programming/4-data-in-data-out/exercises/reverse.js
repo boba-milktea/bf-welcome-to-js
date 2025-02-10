@@ -3,19 +3,20 @@
 /* Reverse
 
   Data In:
-
+  any text 
 
   Data Out:
+  the input and an arrow and the reversed input 
 
 
   Test Cases:
-
+  what is your name -> eman ruoy si tahw
 
 */
 
 /* --- gather user input --- */
 
-let input = null;
+let input = null; //what is your name
 while (input === null) {
   input = prompt('enter some text to reverse');
   console.log(input);
@@ -32,7 +33,7 @@ for (let character of input) {
 /* --- create a final message --- */
 
 let message = input + ' -> ' + reversed;
-console.log(message);
+console.log(message); //eman ruoy si tahw
 
 /* --- display message to the user --- */
 
