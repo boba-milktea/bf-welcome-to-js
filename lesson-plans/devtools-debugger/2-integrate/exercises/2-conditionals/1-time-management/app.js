@@ -18,16 +18,20 @@ whenFormDataChanges('sleep-info', () => {
   let hasTime = readBoolean('free-time');
 
   // --- generate advice ---
-
   let advice = '';
+
   if (isTired && hasTime) {
     advice = 'Take a nap!';
-  } else if (!isTired && hasTime) {
-    advice = 'Study some flashcards.';
-  } else if (isTired && !hasTime) {
-    advice = 'Make some coffee.';
-  } else if (!isTired && !hasTime) {
-    advice = 'Have a great day!';
+  } else {
+    if (!isTired && hasTime) {
+      advice = 'Study some flashcards.';
+    } else {
+      if (isTired && !hasTime) {
+        advice = 'Make some coffee.';
+      } else {
+        advice = 'Have a great day!';
+      }
+    }
   }
 
   // --- display the advice ---
@@ -36,7 +40,7 @@ whenFormDataChanges('sleep-info', () => {
   displayString('advice-area', advice);
 });
 
-/*  ===== Challenges =====
+/*  ===== Challensges =====
 
   - change the conditional so it uses `else` instead of `else if`
 

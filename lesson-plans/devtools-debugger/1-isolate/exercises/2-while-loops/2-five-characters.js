@@ -1,15 +1,26 @@
 'use strict';
+let input = null; 
 
-let input = null;
-while (input === null || input.length !== 5) {
-  input = prompt('enter something with 5 characters:');
+while (input === null || input.length !== 10 || input !== "everything") {
+ input = prompt('enter "every"'); 
+ 
+  if (input === "every") {
+    input = prompt ('enter "everything"'); 
+  } else {
+    input = prompt('enter "every"'); 
+  }
+
 }
+
 
 let message = 'thank you for "' + input + '"!';
 
 alert(message);
 
+
+
 /*  ===== Challenges =====
   - Change the condition to 10 characters.
   - Make the user write "everything" in 2 steps.
 */
+

@@ -6,7 +6,7 @@ import {
 } from '../../../../../../lib/dom-io/index.js';
 
 whenFormDataChanges('search-input', () => {
-  debugger;
+  //debugger;
 
   console.log('--- form data changed ---');
 
@@ -21,12 +21,12 @@ whenFormDataChanges('search-input', () => {
 
   let doesExist = false;
 
-  if (caseSensitive) {
-    doesExist = searchThis.includes(findThis);
-  } else {
+  if (!caseSensitive) {
     let smallSearchThis = searchThis.toLowerCase();
     let smallFindThis = findThis.toLowerCase();
     doesExist = smallSearchThis.includes(smallFindThis);
+  } else {
+    doesExist = searchThis.includes(findThis);
   }
 
   // --- create the message ---
@@ -34,9 +34,9 @@ whenFormDataChanges('search-input', () => {
   let message = '';
 
   if (doesExist) {
-    message = 'yes';
+    message = `Yes, the word ${searchThis} contains ${findThis}`;
   } else {
-    message = 'no';
+    message = `No, the word ${searchThis} does not contain ${findThis}`;
   }
 
   // --- display the search results ---

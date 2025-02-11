@@ -16,6 +16,25 @@
 
 */
 
+/* 
+How many scops do we have in JS? 
+1. block scope -  let , const 
+2. function scope - var 
+3. script scope / module scope  
+4. global scope
+*/
+
+// The curly braces will keep the variable in a block. 
+{
+  const age = 34; 
+}
+
+
+// same as the curly braces in a function
+function sayHello () {
+  var age = 67; 
+}
+
 let didClickOk = confirm('please click "ok":');
 
 let message = '';

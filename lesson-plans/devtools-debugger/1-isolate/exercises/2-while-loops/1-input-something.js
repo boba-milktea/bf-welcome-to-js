@@ -1,7 +1,9 @@
 'use strict';
 
 let input = null;
-while (input === null) {
+
+//Don't run it. It will crash 
+while (!input) {
   input = prompt('input something:');
 }
 

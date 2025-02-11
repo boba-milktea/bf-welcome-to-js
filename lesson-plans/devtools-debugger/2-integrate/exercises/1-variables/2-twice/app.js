@@ -17,12 +17,18 @@ whenFormDataChanges('user-data', () => {
 
   // --- repeat the text ---
 
-  let repeated = text + '\n' + text;
+  //let repeated = text + '\n' + text + '\n' + text + '\n' + text;
+  let repeated = `
+  1 ${text}
+  2 ${text}
+  3 ${text}
+  4 ${text}`;
+
+  displayString('doubled-input', repeated);
 
   // --- display the repeated text ---
 
   // display a string to the <pre> with id "doubled-input"
-  displayString('doubled-input', repeated);
 });
 
 /*  ===== Challenges =====
