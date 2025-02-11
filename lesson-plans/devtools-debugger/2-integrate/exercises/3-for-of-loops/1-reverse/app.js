@@ -6,7 +6,7 @@ import {
 } from '../../../../../../lib/dom-io/index.js';
 
 whenFormDataChanges('reversify', () => {
-  debugger;
+  //debugger;
 
   console.log('--- form data changed ---');
 
@@ -20,17 +20,21 @@ whenFormDataChanges('reversify', () => {
   // --- reverse the string input ---
 
   let reversed = '';
-  for (let character of text) {
-    reversed = character + reversed;
+  for (const lastChar of text) {
+    if (reversed.includes(lastChar)) {
+      console.log('repeated');
+    } else {
+      reversed = lastChar + reversed;
+    }
   }
-
-  console.log(reversed);
 
   // --- set to upper or lower case ---
 
   let finalText = '';
-  if (screaming) {
+  if (reversed.length > 8) {
     finalText = reversed.toUpperCase();
+  } else if (reversed.length > 5) {
+    finalText = reversed;
   } else {
     finalText = reversed.toLowerCase();
   }

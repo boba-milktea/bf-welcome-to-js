@@ -10,7 +10,15 @@ for (let nextChar of toReverse) {
   backwards = nextChar + backwards;
 }
 
-let transformation = toReverse + ' -> ' + backwards;
+let backToNormal = ''; 
+for (let nextChar of toReverse) {
+  backToNormal = backToNormal + nextChar; 
+}
+
+let transformation = toReverse + ' -> ' + backwards + ' -> ' + backToNormal;
+
+//personally, I prefer the answer below
+// let transformation = toReverse + ' -> ' + backwards + ' -> ' + toReverse;
 
 alert(transformation);
 

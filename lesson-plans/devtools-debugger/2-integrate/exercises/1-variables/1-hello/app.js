@@ -12,17 +12,20 @@ whenFormDataChanges('user-info', () => {
 
   // --- read user input ---
 
-  let name = readString('the-name');
-
+  let firstName = readString('the-first-name');
+  let secondName = readString('the-second-name');
+  let name = `${firstName} ${secondName}`;
   console.log(name);
 
   // --- create a message ---
 
-  let greeting = 'Hello ' + name + '!';
+  let message = `
+  Hello ${name}!
+  Goodbye ${name}!`;
 
   // --- display the message ---
 
-  displayString('greeting-output', greeting);
+  displayString('greeting-output', message);
 });
 
 /*  ===== Challenges =====

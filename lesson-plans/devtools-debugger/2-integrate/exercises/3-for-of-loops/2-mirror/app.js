@@ -5,19 +5,20 @@ import {
 } from '../../../../../../lib/dom-io/index.js';
 
 whenFormDataChanges('input', () => {
-  debugger;
+  //debugger;
 
   console.log('--- form data changed ---');
 
   // --- read the user's input ---
 
   let userText = readString('to-mirror');
-
+  let mirrored = readString('symbol');
   // --- mirror the text ---
 
-  let mirrored = ' | ';
+  mirrored = ` ${mirrored} `;
+
   for (let char of userText) {
-    mirrored = char + mirrored + char;
+    mirrored = char.toUpperCase() + mirrored + char.toLowerCase();
   }
 
   // --- display the result ---
