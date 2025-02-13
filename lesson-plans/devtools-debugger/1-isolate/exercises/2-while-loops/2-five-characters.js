@@ -1,7 +1,7 @@
 'use strict';
 let input = null; 
 
-while (input === null || input.length !== 10 || input !== "everything") {
+while (!input || input.length !== 10 || input !== "everything") {
  input = prompt('enter "every"'); 
  
   if (input === "every") {
