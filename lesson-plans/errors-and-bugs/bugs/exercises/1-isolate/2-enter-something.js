@@ -9,9 +9,9 @@
     'JavaScript' -> 'you entered "JavaScript"'
 
   experiment 1
-    line:
-    why:
-    trying:
+    line: 24
+    why: it's an infinite loop
+    trying: add break keyword
 
 */
 
@@ -22,6 +22,7 @@ while (input === null || input.length === 0) {
   const input = prompt('enter something');
 
   message = 'you entered "' + input + '"';
+  break; 
 }
 
 alert(message);

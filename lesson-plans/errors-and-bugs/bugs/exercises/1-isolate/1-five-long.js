@@ -8,15 +8,15 @@
     'abcdef' -> 'too long'
 
   experiment 1
-    line:
-    why:
-    trying:
+    line: 19
+    why: after line 19, the input becomes null
+    trying: change the assignment operator into strict equality operactor
 
 */
 
 let input = prompt('enter something 5 characters long');
 
-if ((input = null)) {
+if (input === null) {
   alert(':(');
 } else if (input.length < 5) {
   alert('too short');

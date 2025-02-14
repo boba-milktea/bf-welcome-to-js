@@ -27,17 +27,28 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = _;
-while (_) {}
+let input = '';
+
+// while no input or cancel or not a text, continue prompt 
+while (!input || !/^[a-zA-Z]+$/.test(input)) {
+  input = prompt('Please enter a text');
+}
 console.log('input:', input);
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-for (let _ of _) {
+for (let i = 0; i < input.length; i++) {
+  // if even, turn it into lower case 
+  if (i % 2 === 0) {
+    output += input[i].toLowerCase();
+     // if odd, turn it into upper case 
+  } else {
+    output += input[i].toUpperCase();
+  }
 }
 
 /* --- alert the result --- */

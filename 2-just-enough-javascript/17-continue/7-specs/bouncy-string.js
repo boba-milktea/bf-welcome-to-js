@@ -29,8 +29,19 @@ console.log('--- begin program ---');
 /* --- gather user input --- */
 
 let input = '';
-while (!input || !/[a-zA-Z]/.test(input)) {
+while (true) {
   input = prompt('please enter a string');
+  if (input === null) {
+    continue;
+  }
+  if (input === '') {
+    continue;
+  }
+  input.trim();
+  if (!/^[a-zA-Z]+$/.test(input)) {
+    continue;
+  }
+  break;
 }
 console.log('input:', input);
 
@@ -41,11 +52,10 @@ let output = '';
 /* --- create final output --- */
 
 for (let i = 0; i < input.length; i++) {
-  if (input[i] % 2 === 0) {
-    output = input[i].toUpperCase;
-    console.log(input[i])
+  if (i % 2 === 0) {
+    output += input[i].toUpperCase;
   } else {
-    output = input[i].toLowerCase;
+    output += input[i].toLowerCase;
   }
 }
 
