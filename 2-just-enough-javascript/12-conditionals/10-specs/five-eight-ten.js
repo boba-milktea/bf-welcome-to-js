@@ -40,14 +40,29 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = prompt(_);
+let input = prompt('Text guess game! Give me a Text!');
 console.log('input:', input);
 
 /* --- declare initial output --- */
+let output = "";
 
-let output = _;
+
 
 /* --- create final output --- */
+if (input === null) {
+  output = ':(';
+} else if (input.length < 5) {
+  output = 'better';
+} else if (input.length < 8) {
+  output = 'almost there';
+} else if (input.length < 10) {
+  output = 'so close';
+} else if (input.length === 10) {
+  output = 'perfect';
+} else {
+  output = 'too long';
+}
+
 
 /* --- alert the result --- */
 

@@ -1,10 +1,10 @@
 'use strict';
 
-__;
+let a = "1, 2";
 console.log(a);
 
 {
-  __;
+  a='1, 2, 3, 4';
   console.log(a);
 }
 

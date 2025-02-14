@@ -37,17 +37,22 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let text = prompt(_);
+let text = prompt("Give me a text");
 console.log('text:', text);
 
-let query = prompt(_);
+let query = prompt("Give me anoter text");
 console.log('query:', query);
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = "";
 
 /* --- create final output --- */
+if (text.toLowerCase().includes(query.toLowerCase())) {
+  output = `${text} does include ${query}`; 
+} else {
+  output = `${text} does not include ${query}`
+}
 
 /* --- alert the result --- */
 

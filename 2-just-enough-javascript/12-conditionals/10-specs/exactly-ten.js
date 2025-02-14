@@ -29,14 +29,22 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = prompt(_);
+let input = prompt("please enter a text");
 console.log('input:', input);
 
 /* --- declare initial output --- */
-
-let output = _;
+let output = "";
 
 /* --- create final output --- */
+if (input === null) {
+  output = "T°T"; 
+} else if (input.length < 10) {
+  output = `${input} is ${10 - input.length} too short`
+} else if (input.length > 10) {
+  output = `${input} is ${input.length - 10} too long`
+} else {
+  output = `${input} is perfect!`
+}
 
 /* --- alert the result --- */
 
