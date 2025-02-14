@@ -9,9 +9,9 @@
 
 
   experiment 1
-    line:
-    why:
-    trying:
+    line: 25
+    why: the words are not concatenated 
+    trying: change the assignment operactor to addition assignment operactor
 
 */
 
@@ -22,7 +22,7 @@ while (text === null) {
 
 let excited = '';
 for (const character of text) {
-  excited = character + '!';
+  excited += character + '!';
 }
 
 alert(excited);

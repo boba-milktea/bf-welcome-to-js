@@ -20,11 +20,37 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-while (_) {}
+let input = '';
+
+while (true) {
+  input = prompt('please enter a character');
+  if (input === null) {
+    input = prompt('please enter something');
+    continue;
+  }
+  if (input === '') {
+    input = prompt('please enter something');
+    continue;
+  }
+  input.trim();
+  if (!/^[a-zA-Z]+$/.test(input)) {
+    input = prompt('please enter a valid character');
+    continue;
+  }
+  if (input.length > 1) {
+    input = prompt('just one character');
+    continue;
+  }
+  output += input;
+  let isConfirmed = confirm('are you sure that is your word?');
+  if (isConfirmed) {
+    break;
+  }
+}
 
 /* --- alert the result --- */
 

@@ -19,19 +19,14 @@ whenFormDataChanges('sleep-info', () => {
 
   // --- generate advice ---
   let advice = '';
-
   if (isTired && hasTime) {
     advice = 'Take a nap!';
+  } else if (!isTired && hasTime) {
+    advice = 'Study some flashcards.';
+  } else if (isTired && !hasTime) {
+    advice = 'Make some coffee.';
   } else {
-    if (!isTired && hasTime) {
-      advice = 'Study some flashcards.';
-    } else {
-      if (isTired && !hasTime) {
-        advice = 'Make some coffee.';
-      } else {
-        advice = 'Have a great day!';
-      }
-    }
+    advice = 'Have a great day!';
   }
 
   // --- display the advice ---
