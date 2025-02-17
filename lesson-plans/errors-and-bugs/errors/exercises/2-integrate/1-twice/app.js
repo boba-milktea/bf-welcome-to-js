@@ -5,19 +5,20 @@ import {
   displayString,
 } from '../../../../../../../lib/dom-io/index.js';
 
+
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: SyntaxError
+  message:Unexpected token '+'
 
-  location:
+  location: js:33  
 
-  life cycle:
+  life cycle: execution phase 
 
-  the mistake:
+  the mistake: the plus sign is invalid
 
-  the fix(es):
+  the fix(es): change it to the assigment symbol 
 */
 
 whenFormDataChanges('user-data', () => {
@@ -29,7 +30,7 @@ whenFormDataChanges('user-data', () => {
 
   // --- repeat the text ---
 
-  let repeated + text + '\n' + text;
+  let repeated = text + '\n' + text;
 
   // --- display the repeated text ---
 

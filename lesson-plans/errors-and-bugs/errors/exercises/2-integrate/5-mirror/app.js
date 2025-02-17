@@ -5,22 +5,22 @@ import {
 } from '../../../../../../../lib/dom-io/index.js';
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: SyntaxError
+  message: Invalid left-hand side expression in prefix operation
 
-  location:
+  location: app.js:23  
 
-  life cycle:
+  life cycle: execution phase
 
-  the mistake:
+  the mistake: why do you put hyphen there?!! No! it's ""
 
-  the fix(es):
+  the fix(es): change hyphens to ""
 */
 
 whenFormDataChanges('input', () => {
-  console.log(--- form data changed ---);
+  console.log("form data changed");
 
   // --- read the user's input ---
 

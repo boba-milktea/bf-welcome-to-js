@@ -3,20 +3,20 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment:chrome
 
-  name:
-  message:
+  name: reference error 
+  message: welf is not defined 
 
-  location:
+  location: line 20
 
-  life cycle:
+  life cycle: execution phase
 
-  the mistake:
+  the mistake:no delcaration
 
-  the fix(es):
+  the fix(es): use const or let
 */
 
-welf = 'ingrad';
+const welf = 'ingrad';
 
 console.log(welf);
