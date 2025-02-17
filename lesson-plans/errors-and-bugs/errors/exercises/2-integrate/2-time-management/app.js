@@ -5,18 +5,18 @@ import {
 } from '../../../../../../../lib/dom-io/index.js';
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: ReferenceError
+  message: DisplayString is not defined
 
-  location:
+  location: app.js:46 
 
-  life cycle:
+  life cycle: creation phase
 
-  the mistake:
+  the mistake: the letter should be lowercase 
 
-  the fix(es):
+  the fix(es): change it to displayString
 */
 
 whenFormDataChanges('sleep-info', () => {
@@ -43,5 +43,5 @@ whenFormDataChanges('sleep-info', () => {
 
   // --- display the advice ---
 
-  DisplayString('advice-area', advice);
+  displayString('advice-area', advice);
 });

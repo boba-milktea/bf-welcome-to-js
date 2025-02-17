@@ -8,20 +8,22 @@ console.log('--- in execution phase ---');
 /*
   environment:
 
-  name:
-  message:
+  name:SyntaxError
+  message:Failed to execute 'appendChild' on 'Node': Invalid left-hand
 
-  location:
+  location: at evaller.onload (study-with.js:63:34)
 
-  life cycle:
+  life cycle: creation phase 
 
-  the mistake:
+  the mistake: the assignment is wrong 
 
-  the fix(es):
+  the fix(es): isHappy = true; 
 */
 
 let isHappy = false;
 
-true = isHappy;
+isHappy = true;
+
+console.log(isHappy); 
 
 

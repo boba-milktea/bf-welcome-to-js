@@ -6,20 +6,20 @@ console.log('--- in execution phase ---');
 
 
 /*
-  environment:
+  environment:chrome
 
-  name:
-  message:
+  name:SyntaxError
+  message:Failed to execute 'appendChild' on 'Node': Unexpected string
 
-  location:
+  location: at evaller.onload (study-with.js:63:34)
 
-  life cycle:
+  life cycle: creation phase
 
-  the mistake:
+  the mistake: no concate sign 
 
-  the fix(es):
+  the fix(es): add plus
 */
 
-const quotesInQuotes = 'remind yourself ''i can do this!'' at least once a day';
+const quotesInQuotes = 'remind yourself '+'i can do this!'+' at least once a day';
 
 
