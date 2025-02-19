@@ -22,6 +22,7 @@ while (true) {
     break;
   }
 
+  
   if (input.length < 5) {
     shortStrings = shortStrings + '\n- "' + input + '"';
   } else if (input.length < 10) {
@@ -30,5 +31,5 @@ while (true) {
     longStrings = longStrings + '\n- "' + input + '"';
   }
 }
-
-alert(shortStrings + '\n\n' + mediumStrings + '\n\n' + longStrings);
+//swapped longStrings and shortStrings
+alert(longStrings + '\n\n' + mediumStrings + '\n\n' + shortStrings);

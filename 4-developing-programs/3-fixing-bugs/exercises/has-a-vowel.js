@@ -18,14 +18,14 @@
 
   --- experiments ---
 
-  1. FAILING:
-      EXPECT:
-      ACTUAL:
+  1. FAILING: evertyhing 
+      EXPECT: the message for aeiou should be has at least one vowel, and "" should be has no vowels
+      ACTUAL: now it's reversed.
 
-    TRY:
-    PREDICT:
-    IT DID:
-    EXPLAIN:
+    TRY:change hasAvowel to false, then if it includes vowels, it should be true
+    PREDICT: empty strings should should not have vowel
+    IT DID: worked
+    EXPLAIN: 
 
   --- lessons learned ---
 
@@ -39,10 +39,10 @@ while (characters === null) {
 
 const vowels = 'aeiouAEIOU';
 
-let hasAVowel = true;
+let hasAVowel = false;
 for (const char of characters) {
   if (vowels.includes(char)) {
-    hasAVowel = false;
+    hasAVowel = true;
     break;
   }
 }

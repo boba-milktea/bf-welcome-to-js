@@ -3,20 +3,22 @@
 'use strict';
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: duplicae definition
+  message: duplicate definition of moduel
 
-  callstack:
+  callstack: none
 
-  life cycle:
+  life cycle: creation pase 
 
-  the mistake:
+  the mistake: userInput is null 
 
-  the fix(es):
+  the fix(es): assign a new value to userInput 
 */
 
-const userInput = null;
+let userInput = null;
+
+userInput = "Hello world"
 
 console.log(userInput.length);

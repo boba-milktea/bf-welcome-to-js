@@ -16,8 +16,12 @@ let previous = '';
 
 let noRepetitions = '';
 for (const next of phrase) {
+
+  //see if the next char is equal to the prev 
   if (next !== previous) {
+    // if not, the char is saved
     noRepetitions = noRepetitions + next;
+    // the char is saved to next for the next if
     previous = next;
   }
 }

@@ -41,9 +41,9 @@ for (const character of sentence) {
       newSentence = newSentence + character + nextWord;
     }
     nextWord = '';
-  } else {
-    nextWord = nextWord + character;
-  }
+  } 
+  nextWord = nextWord + character;
+  continue; 
 }
 
 alert(newSentence);

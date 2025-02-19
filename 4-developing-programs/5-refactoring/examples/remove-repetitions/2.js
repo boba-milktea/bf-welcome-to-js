@@ -16,7 +16,10 @@ let previous = '';
 let noRepetitions = '';
 
 let i = 0;
+
+//i is the index, if i is less than the length of the string, we loop the code
 while (i < phrase.length) {
+  // next will be looping the character in the phrase
   const next = phrase[i];
   if (next !== previous) {
     noRepetitions = noRepetitions + next;

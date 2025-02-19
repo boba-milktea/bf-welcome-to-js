@@ -24,7 +24,8 @@ while (true) {
   }
 
   if (input.length < 5) {
-    shortStrings = shortStrings + '\n- "' + input + '"';
+    continue; //added continue
+    // shortStrings = shortStrings + '\n- "' + input + '"';
   } else if (input.length < 10) {
     mediumStrings = mediumStrings + '\n- "' + input + '"';
   } else {
@@ -33,3 +34,4 @@ while (true) {
 }
 
 alert(shortStrings + '\n\n' + mediumStrings + '\n\n' + longStrings);
+
