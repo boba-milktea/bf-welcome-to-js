@@ -35,3 +35,25 @@
       'Do dump'     ->  'DOGo dogump'
       'dim mooD'    -> 'dogim mooDOG'
 */
+
+
+let input = prompt ("please enter something"); 
+
+while (input === null) {
+ input = prompt ("please enter something"); 
+}; 
+
+
+
+if (input.includes('d')) {
+  input = input.replace("d", "dog"); 
+} else if (input.includes('D')) {
+   input = input.replace("D", "DOG"); 
+} else if (input.includes("D") || input.includes("d")) {
+   input = input.relace("d", "dog"); 
+   input = input.replace("D", "DOG"); 
+} else {
+   input = input; 
+}
+
+alert(input); 

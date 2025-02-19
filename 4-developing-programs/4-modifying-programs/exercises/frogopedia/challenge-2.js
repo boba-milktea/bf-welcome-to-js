@@ -21,8 +21,8 @@ while (!inputIsAboutAnimal) {
     alert('that is not something');
     continue;
   }
-
-  if (userInput.toLowerCase().includes(animal)) {
+  // remove toLowercase()
+  if (userInput.includes(animal)) {
     inputIsAboutAnimal = true;
     continue;
   }

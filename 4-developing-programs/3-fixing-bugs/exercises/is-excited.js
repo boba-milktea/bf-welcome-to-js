@@ -18,13 +18,13 @@
 
   --- experiments ---
 
-  1. FAILING:
-      EXPECT:
-      ACTUAL:
+  1. FAILING: empty string
+      EXPECT: not excited 
+      ACTUAL: is excited
 
-    TRY:
-    PREDICT:
-    IT DID:
+    TRY:change !== to ==
+    PREDICT: should work 
+    IT DID: worked
     EXPLAIN:
 
   --- lessons learned ---
@@ -41,7 +41,7 @@ while (input === null) {
 
 let isExcited = false;
 for (const char of input) {
-  if (char !== '!') {
+  if (char === '!') {
     isExcited = true;
     break;
   }

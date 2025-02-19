@@ -16,12 +16,12 @@
 
   --- experiments ---
 
-  1. FAILING:
-      EXPECT:
-      ACTUAL:
+  1. FAILING: empty string
+      EXPECT: '|'
+      ACTUAL: has two || 
 
-    TRY:
-    PREDICT:
+    TRY: delete the first mirrored, and the character at the end 
+    PREDICT:"" -> "|" hi -> "ih|hi"
     IT DID:
     EXPLAIN:
 
@@ -37,7 +37,7 @@ while (text === null) {
 
 let mirrored = '|';
 for (const character of text) {
-  mirrored = mirrored + character + mirrored;
+  mirrored = character + mirrored + character ;
 }
 
 alert(mirrored);

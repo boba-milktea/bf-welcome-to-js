@@ -16,13 +16,13 @@
 
   --- experiments ---
 
-  1. FAILING:
-      EXPECT:
-      ACTUAL:
+  1. FAILING: hi  
+      EXPECT: give me "hi"
+      ACTUAL: give me the loop 
 
-    TRY:
-    PREDICT:
-    IT DID:
+    TRY: change the strict equal to none equal 
+    PREDICT: it should turn it into a loop 
+    IT DID: 
     EXPLAIN:
 
   --- lessons learned ---
@@ -30,15 +30,24 @@
 
 */
 
-let message = 'you entered "';
+let message = null; 
 
 while (true) {
   const input = prompt('enter something');
-
-  if (input === null && input.length === 0) {
-    message = input + '"';
-    break;
+  if (input !== null && input.length !== 0) {
+     message =  `"${input}"`;
   }
+  break;
 }
 
-alert(message);
+ alert (message); 
+
+
+// while (true) {
+//   const input = prompt('enter something');
+
+//   if (input === null && input.length === 0) {
+//     message = input + '"';
+//     break;
+//   }
+// }

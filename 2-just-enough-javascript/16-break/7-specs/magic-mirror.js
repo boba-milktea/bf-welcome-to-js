@@ -29,17 +29,20 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = _;
-while (_) {}
+let input = "";
+while (!input) {
+  input = prompt ("enter something")
+}
 console.log('input:', input);
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = " ";
 
 /* --- create final output --- */
 
-for (let _ of _) {
+for (let char of input) {
+  output = char + output; 
 }
 
 /* --- alert the result --- */
