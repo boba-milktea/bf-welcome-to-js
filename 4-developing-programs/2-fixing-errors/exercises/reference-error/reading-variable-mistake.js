@@ -3,20 +3,23 @@
 'use strict';
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: ReferenceError
+  message:Cannot access 'tomatoes' before initialization
 
-  callstack:
+  callstack:at <anonymous>:20:13
+    at evaller.onload (study-with.js:63:34)
 
-  life cycle:
+  life cycle: execution 
 
-  the mistake:
+  the mistake: initialization should before console
 
-  the fix(es):
+  the fix(es): move line 23 before 21
 */
+
+let tomatoes = 'fresh';
 
 console.log(tomatoes);
 
-let tomatoes = 'fresh';
+

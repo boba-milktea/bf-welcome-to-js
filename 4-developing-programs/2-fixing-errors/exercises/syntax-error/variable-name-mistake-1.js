@@ -6,19 +6,19 @@
 /*
   environment:
 
-  name:
-  message:
+  name:SyntaxError
+  message: Failed to execute 'appendChild' on 'Node': Unexpected number
 
-  callstack:
+  callstack: at evaller.onload (study-with.js:63:34)
 
-  life cycle:
+  life cycle: creation 
 
-  the mistake:
+  the mistake: 3 can't be the variable 
 
-  the fix(es):
+  the fix(es): change the variable name 
 */
 
 
-const 3 = 'three';
+const three = 'three';
 
 

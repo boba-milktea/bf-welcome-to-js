@@ -51,11 +51,11 @@
 
   life cycle: creation phase
 
-  the mistake:
-
-  the fix(es):
+  the mistake: missing {
+ 
+  the fix(es): add {
 */
 
-for (let i = 0; i < 5; i++)
+for (let i = 0; i < 5; i++) {
   console.log(i);
 }

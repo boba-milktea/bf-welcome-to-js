@@ -29,18 +29,18 @@
 /*
   environment: Chrome
 
-  name:
-  message:
+  name: SyntaxError
+  message: Failed to execute 'appendChild' on 'Node': Unexpected token '}'
 
-  callstack:
+  callstack: 
 
-  life cycle:
+  life cycle: execution phase
 
-  the mistake:
+  the mistake: missing {
 
-  the fix(es):
-*/
+  the fix(es): add {
+    */
 
-for (let i = 0; i < 5; i++)
+for (let i = 0; i < 5; i++) {
   console.log(i);
 }

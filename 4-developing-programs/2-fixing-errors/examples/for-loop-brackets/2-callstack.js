@@ -33,13 +33,13 @@
     at JavaScriptFE.studyWith (javascript-class.js:201)
     at HTMLButtonElement.<anonymous> (javascript-class.js:103)
 
-  life cycle:
+  life cycle: creation phase
 
-  the mistake:
+  the mistake: missing {
 
-  the fix(es):
+  the fix(es): add {
 */
 
-for (let i = 0; i < 5; i++)
+for (let i = 0; i < 5; i++) {
   console.log(i);
 }
