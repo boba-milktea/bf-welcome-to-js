@@ -4,23 +4,23 @@
 
 
 /*
-  environment:
+  environment:chrome
 
-  name:
-  message:
+  name:SyntaxError
+  message:ailed to execute 'appendChild' on 'Node': Unexpected token '}'
 
-  callstack:
+  callstack: at evaller.onload (study-with.js:63:34)
 
-  life cycle:
+  life cycle: creation 
 
-  the mistake:
+  the mistake: too many }
 
-  the fix(es):
+  the fix(es): delete one }
 */
 
 
 
-for (let i = 0; i < 5; i++) { }
+for (let i = 0; i < 5; i++) { 
 console.log(i);
 }
 

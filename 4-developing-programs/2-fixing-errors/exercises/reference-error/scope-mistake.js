@@ -3,27 +3,30 @@
 'use strict';
 
 /*
-  environment:
+  environment:chrome
 
-  name:
-  message:
+  name:ReferenceError
+  message: isValidUserName is not defined
 
-  callstack:
+  callstack:at <anonymous>:29:57
+    at evaller.onload (study-with.js:63:34)
 
-  life cycle:
+  life cycle:execution 
 
-  the mistake:
+  the mistake:isValidUserName declared after if function 
 
-  the fix(es):
+  the fix(es): declare and initialise isValidUserName first
 */
 
 const userName = 'chiobin';
 console.log('userName:', typeof userName, userName);
 
+let isValidUserName;
+
 if (userName.length > 4) {
-  const isValidUserName = true;
+  isValidUserName = true;
 } else {
-  const isValidUserName = false;
+  isValidUserName = false;
 }
 
 console.log('isValidUserName:', typeof isValidUserName, isValidUserName);

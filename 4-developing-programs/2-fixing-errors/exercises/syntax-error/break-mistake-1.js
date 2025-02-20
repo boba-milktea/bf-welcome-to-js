@@ -3,25 +3,25 @@
 'use strict';
 
 /*
-  environment:
+  environment: crhome
 
-  name:
-  message:
+  name: SyntaxError
+  message:Failed to execute 'appendChild' on 'Node': Illegal break statement
 
-  callstack:
+  callstack: at evaller.onload (study-with.js:63:34)
 
-  life cycle:
+  life cycle: creation 
 
-  the mistake:
+  the mistake: shouldn't have break
 
-  the fix(es):
+  the fix(es): delete break
 */
 
 const userName = 'wingdoz';
 
 if (userName.length > 3) {
   console.log(userName);
-  break;
+
 }
 
 
